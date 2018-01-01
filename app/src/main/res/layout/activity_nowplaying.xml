@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBluish"
+    android:orientation="vertical"
+    tools:context="com.example.dell.bebop.nowplaying">
+
+    <LinearLayout
+        android:id="@+id/linear11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/prev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:onClick="prev"
+            android:src="@drawable/prev" />
+
+        <LinearLayout
+            android:id="@+id/linear12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/paus"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:onClick="pause"
+                android:src="@drawable/pause" />
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:onClick="play"
+                android:src="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/stop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:onClick="stop"
+                android:src="@drawable/stop" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="next"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/libbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Library" />
+
+    <Button
+        android:id="@+id/sdbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Song Details" />
+
+    <Button
+        android:id="@+id/plistbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Playlists" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:text="NOW PLAYING: You can play , pause, stop the song.You can also play the previous song or the next song. You can also move to the other libraries" />
+
+</LinearLayout>

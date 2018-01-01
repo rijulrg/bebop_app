@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.bebop.MainActivity">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bb" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topLabel"
+            style="@style/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Bebop World (Music App)" />
+
+        <TextView
+            android:id="@+id/np"
+            style="@style/smenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Now Playing" />
+
+        <TextView
+            android:id="@+id/lib"
+            style="@style/smenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorYellowish"
+            android:text="Library" />
+
+        <TextView
+            android:id="@+id/plist"
+            style="@style/smenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorReddish"
+            android:text="Playlists" />
+
+        <TextView
+            android:id="@+id/sdet"
+            style="@style/smenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLightBluish"
+            android:text="Song Details" />
+
+        <TextView
+            android:id="@+id/buyt"
+            style="@style/smenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPinkish"
+            android:text="Buy Fresh Tunes" />
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonHelp"
+                style="@style/sbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="help"
+                android:text="Help" />
+
+            <Button
+                android:id="@+id/buttonPlay"
+                style="@style/sbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="play"
+                android:text="Play" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorYellowish"
+            android:padding="3dp"
+            android:text="Main: here Now Playing show the current playing song, whereas Library migrated you to the list of songs, Playlists shows the available playlists, Song Details shows the details of currently playing song and Buy Fresh Tunes is used to buy new bebop tunes."
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

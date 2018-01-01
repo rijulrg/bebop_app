@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBluish"
+    android:orientation="vertical"
+    tools:context="com.example.dell.bebop.musiclibrary">
+
+    <Button
+        android:id="@+id/npbuttonl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="40dp"
+        android:text="Show All Songs" />
+
+    <Button
+        android:id="@+id/libbuttonl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Now Playing" />
+
+    <Button
+        android:id="@+id/sdbuttonl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Song Details" />
+
+    <Button
+        android:id="@+id/plistbuttonl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Playlists" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:text="LIBRARY: You you can check the list of all you songs by clicking on the SHOW ALL SONGS button above. Select your favorite song from the entire playlist. For currently playing song , the song details or to see in which playlist you have added this song , use last three Buttons." />
+
+</LinearLayout>

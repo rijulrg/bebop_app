@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightBluish"
+    android:orientation="vertical"
+    tools:context="com.example.dell.bebop.buyFreshTunes">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Song:-"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Album:-"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Artist:-"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Buy" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/paytmbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Paytm" />
+
+        <Button
+            android:id="@+id/creditbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Credit/debit card" />
+
+        <Button
+            android:id="@+id/paypalbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Pay PAl" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Now Playing" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="BUY TUNES: Here you can buy new songs of your choice by clicking on BUY. The song details are displayed above. Click on the buy button to add this song to your music library. You can even select various modes for payment. Paytm make payment using paytm wallet, credit/debit card make payment using HDFC bank card and Paypal for making payment using netbanking." />
+
+</LinearLayout>
